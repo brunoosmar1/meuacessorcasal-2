@@ -52,7 +52,7 @@ Regras:
 
 async function interpretMessage(text, todayISO) {
   const msg = await client.messages.create({
-    model: "claude-sonnet-5",
+    model: "claude-haiku-4-5-20251001",
     max_tokens: 400,
     system: `${SYSTEM_PROMPT}\n\nData de hoje: ${todayISO}`,
     messages: [{ role: "user", content: text }],
